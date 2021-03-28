@@ -31,6 +31,7 @@ After these steps we can simply run app.py (change db connection)
 	extension: "/cars"
 	pass by: JSON request
 	JSON request structure:
+	
 	{
 					"id": "zzz", #Text
                     "active": "zzz", #Text
@@ -45,6 +46,7 @@ After these steps we can simply run app.py (change db connection)
                     "fuel_type": "zzz", #Text
                     "exterior_color": "zzz", #Text
 				}
+				
 2) To list all makes, models, and submodels:
 	Method: GET
 	pass by: url arguments
@@ -54,19 +56,23 @@ After these steps we can simply run app.py (change db connection)
 	extension: "/query-by-name"
 	pass by: JSON request
 	JSON request structure:
+	
 	{
 					"table": "zzz", #"cars" or "models" or "makes" or "submodels"
                     "name": "zzz", #Text
 				}
+				
 4) Fetch cars along with make, model, and submodel names of given price and mileage:
 	Method: GET
 	extension: "/query-by-price-mileage"
 	pass by: JSON request
 	JSON request structure:
+	
 	{
 					"year": 1234, #Numeric
                     "mileage": 1234, #Numeric
 				}
+				
 
 ## Improvements
 
