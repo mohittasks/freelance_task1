@@ -30,7 +30,8 @@ After these steps we can simply run app.py (change db connection)
 	Method: POST
 	extension: "/cars"
 	pass by: JSON request
-	JSON request structure:{
+	JSON request structure:
+	{
 					"id": "zzz", #Text
                     "active": "zzz", #Text
                     "year": "zzz", #Text
@@ -52,7 +53,8 @@ After these steps we can simply run app.py (change db connection)
 	Method: GET
 	extension: "/query-by-name"
 	pass by: JSON request
-	JSON request structure:{
+	JSON request structure:
+	{
 					"table": "zzz", #"cars" or "models" or "makes" or "submodels"
                     "name": "zzz", #Text
 				}
@@ -60,7 +62,8 @@ After these steps we can simply run app.py (change db connection)
 	Method: GET
 	extension: "/query-by-price-mileage"
 	pass by: JSON request
-	JSON request structure:{
+	JSON request structure:
+	{
 					"year": 1234, #Numeric
                     "mileage": 1234, #Numeric
 				}
